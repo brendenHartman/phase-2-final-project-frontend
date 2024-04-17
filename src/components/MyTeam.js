@@ -42,21 +42,23 @@ function MyTeam(){
         });
     }
     return(
-    <>
+    <div className="myTeam">
         <NavBar /> 
         <h1>Create Your Own Team!</h1>
         <form onSubmit={handleCreateTeam}>
             <input type="text" placeholder="enter a team name..." onChange={handleNameChange}/>
             <input type="text" placeholder="enter your teams location..." onChange={handleLocationChange}/>
             <h4>East conference, or West conference?</h4>
-            <label for="East">East</label>
-            <input id="East" type="radio" value="East" name="conB" onClick={handleConferenceChange}/>
-            <label for="West">West</label>
-            <input id="West" type="radio" value="West" name="conB" onClick={handleConferenceChange}/>
+            <div className="radios">
+                <label htmlFor="East">East</label>
+                <input id="East" type="radio" value="East" name="conB" onClick={handleConferenceChange}/>
+                <label htmlFor="West">West</label>
+                <input id="West" type="radio" value="West" name="conB" onClick={handleConferenceChange}/>
+            </div>
             <input type="submit" value="Create Team"/>
         </form>
         {<Team key="30" team={myTeam}/>}
-    </>
+    </div>
     );
 }
 

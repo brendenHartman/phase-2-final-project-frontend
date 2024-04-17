@@ -25,10 +25,12 @@ function handleRemove(event){
 }
 
     return(
-        <>
+        <div>
             <NavBar />
-            {teams.map((team) => <Team key={team.id} team={team} handleRemove={handleRemove}/>)}
-        </>
+            <div className="teamList">
+                {teams.map((team) => <Team key={team.id} team={team} handleRemove={handleRemove}/>)}
+            </div>
+        </div>
     );
 }
 
