@@ -1,0 +1,178 @@
+{
+    "teams": [
+      {
+        "id": 1,
+        "name": "Atlanta United FC",
+        "location": "Atlanta, Georgia",
+        "conference": "East"
+      },
+      {
+        "id": 2,
+        "name": "Charlotte FC",
+        "location": "Charlotte, North Carolina",
+        "conference": "East"
+      },
+      {
+        "id": 3,
+        "name": "Chicago Fire",
+        "location": "Bridgeview, Illinois",
+        "conference": "East"
+      },
+      {
+        "id": 4,
+        "name": "Columbus Crew",
+        "location": "Columbus, Ohio",
+        "conference": "East"
+      },
+      {
+        "id": 5,
+        "name": "D.C. United",
+        "location": "Washington, D.C.",
+        "conference": "East"
+      },
+      {
+        "id": 6,
+        "name": "FC Cincinnati",
+        "location": "Cincinnati, Ohio",
+        "conference": "East"
+      },
+      {
+        "id": 7,
+        "name": "Inter Miami",
+        "location": "Miami, Florida",
+        "conference": "East"
+      },
+      {
+        "id": 8,
+        "name": "Montreal Impact",
+        "location": "Montreal, Quebec",
+        "conference": "East"
+      },
+      {
+        "id": 9,
+        "name": "Nashville SC",
+        "location": "Nashville, Tennessee",
+        "conference": "East"
+      },
+      {
+        "id": 10,
+        "name": "New England Revolution",
+        "location": "Foxborough, Massachusetts",
+        "conference": "East"
+      },
+      {
+        "id": 11,
+        "name": "New York City FC",
+        "location": "New York, New York",
+        "conference": "East"
+      },
+      {
+        "id": 12,
+        "name": "New York Red Bulls",
+        "location": "Harrison, New Jersey",
+        "conference": "East"
+      },
+      {
+        "id": 13,
+        "name": "Orlando City SC",
+        "location": "Orlando, Florida",
+        "conference": "East"
+      },
+      {
+        "id": 14,
+        "name": "Philadelphia Union",
+        "location": "Chester, Pennsylvania",
+        "conference": "East"
+      },
+      {
+        "id": 15,
+        "name": "Toronto FC",
+        "location": "Toronto, Ontario",
+        "conference": "East"
+      },
+      {
+        "id": 16,
+        "name": "Austin FC",
+        "location": "Austin, Texas",
+        "conference": "West"
+      },
+      {
+        "id": 17,
+        "name": "Colorado Rapids",
+        "location": "Commerce City, Colorado",
+        "conference": "West"
+      },
+      {
+        "id": 18,
+        "name": "FC Dallas",
+        "location": "Frisco, Texas",
+        "conference": "West"
+      },
+      {
+        "id": 19,
+        "name": "Houston Dynamo",
+        "location": "Houston, Texas",
+        "conference": "West"
+      },
+      {
+        "id": 20,
+        "name": "LA Galaxy",
+        "location": "Los Angeles, California",
+        "conference": "West"
+      },
+      {
+        "id": 21,
+        "name": "Los Angeles FC",
+        "location": "Los Angeles, California",
+        "conference": "West"
+      },
+      {
+        "id": 22,
+        "name": "Minnesota United",
+        "location": "Minneapolis, Minnesota",
+        "conference": "West"
+      },
+      {
+        "id": 23,
+        "name": "Portland Timbers",
+        "location": "Portland, Oregon",
+        "conference": "West"
+      },
+      {
+        "id": 24,
+        "name": "Real Salt Lake",
+        "location": "Sandy, Utah",
+        "conference": "West"
+      },
+      {
+        "id": 25,
+        "name": "San Jose Earthquakes",
+        "location": "San Jose, California",
+        "conference": "West"
+      },
+      {
+        "id": 26,
+        "name": "Seattle Sounders FC",
+        "location": "Seattle, Washington",
+        "conference": "West"
+      },
+      {
+        "id": 27,
+        "name": "Sporting Kansas City",
+        "location": "Kansas City, Kansas",
+        "conference": "West"
+      },
+      {
+        "id": 28,
+        "name": "St. Louis City SC",
+        "location": "St. Louis, Missouri",
+        "conference": "West"
+      },
+      {
+        "id": 29,
+        "name": "Vancouver Whitecaps",
+        "location": "Vancouver, British Columbia",
+        "conference": "West"
+      }
+    ]
+  }
