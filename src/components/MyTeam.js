@@ -1,18 +1,18 @@
 import NavBar from "./NavBar";
 import Team from "./Team";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useOutletContext } from "react-router-dom";
 
 function MyTeam(){
     const navigate = useNavigate();
-
+    const {handleSetTeams}  = useOutletContext();
     const [teamId, setId] = useState(30)
     const[myTeam, setMyTeam] = useState({
-        name: "My Team",
-        location: "Plz Enter A Location",
+        id: teamId.toString(),
+        name: "",
+        location: "",
         conference: "East/West"
     });
-     console.log(myTeam)
     function handleNameChange(event){
         setMyTeam({...myTeam, name: event.target.value})
     }
@@ -37,8 +37,8 @@ function MyTeam(){
         })
         .then(r => r.json())
         .then(data => {
-            setId(teamId + 1)
-            console.log(data)
+            handleSetTeams(myTeam);
+            setId(teamId + 1);
         });
     }
     return(
@@ -46,8 +46,8 @@ function MyTeam(){
         <NavBar /> 
         <h1>Create Your Own Team!</h1>
         <form onSubmit={handleCreateTeam}>
-            <input type="text" placeholder="enter a team name..." onChange={handleNameChange}/>
-            <input type="text" placeholder="enter your teams location..." onChange={handleLocationChange}/>
+            <input type="text" onChange={handleNameChange} value={myTeam.name}/>
+            <input type="text" onChange={handleLocationChange} value={myTeam.location}/>
             <h4>East conference, or West conference?</h4>
             <div className="radios">
                 <label htmlFor="East">East</label>

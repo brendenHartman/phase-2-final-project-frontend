@@ -1,16 +1,10 @@
 import Team from "./Team";
-import { useState, useEffect } from "react";
 import NavBar from "./NavBar";
+import { useOutletContext } from "react-router-dom";
 
 function TeamList(){
-const [teams, setTeams] = useState([]);
 
-useEffect(() => {
-    fetch("http://localhost:3000/teams")
-    .then(r => r.json())
-    .then(data => setTeams(data))
-    .catch(error => console.log(error))
-}, [])
+const {teams, handleRemoveTeam} = useOutletContext();
 
 function handleRemove(event){
     const teamID = event.target.id;
@@ -19,7 +13,7 @@ function handleRemove(event){
     })
     .then((r) => r.json())
     .then((data) => {
-        setTeams(teams.filter(team => team.id != teamID))
+        handleRemoveTeam(teamID)
         console.log(data)
     })
 }
